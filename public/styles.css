@@ -1,0 +1,42 @@
+@import "./bootstrap.css";
+
+.navbar {
+  margin-bottom: 2rem;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card {
+  width: 100%;
+}
+
+.nav-link {
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: var(--bs-body-color);
+  background-color: var(--bs-blue);
+  border-radius: 8px;
+}
+
+.card-body {
+  background-color: var(--bs-gray-800);
+}
+
+.name-date {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.date {
+  display: flex;
+  gap: 10px;
+  font-size: 0.75rem;
+}

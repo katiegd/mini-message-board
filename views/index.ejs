@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <title><%= title%></title>
+  </head>
+  <body>
+    <div class="container">
+      <%- include("navbar") %> <% messages.forEach((message, i) => { %>
+      <div class="card text-bg-primary mb-3">
+        <div class="card-header name-date">
+          <div class="name"><%=message.user %></div>
+          <div class="date">
+            <%=message.added %>
+            <a href="/message/<%= i %>"
+              ><span class="badge rounded-pill text-bg-light">OPEN</span></a
+            >
+          </div>
+        </div>
+        <div class="card-body text-light">
+          <p class="card-title"><%=message.text %></p>
+        </div>
+      </div>
+
+      <% }) %>
+    </div>
+  </body>
+</html>
