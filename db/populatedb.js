@@ -5,7 +5,7 @@ require("dotenv").config();
 
 async function main() {
   const client = new Client({
-    connectionString: process.env.DATABASE_URL,
+    connectionString: process.env.RENDER_DB_URL,
   });
 
   try {
