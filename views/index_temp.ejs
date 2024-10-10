@@ -13,16 +13,16 @@
       <%- include("navbar") %> <% messages.forEach((message, i) => { %>
       <div class="card text-bg-primary mb-3">
         <div class="card-header name-date">
-          <div class="name"><%=message.name %></div>
+          <div class="name"><%=message.user %></div>
           <div class="date">
-            <%=message.created_at %>
+            <%=message.added %>
             <a href="/message/<%= i %>"
               ><span class="badge rounded-pill text-bg-light">OPEN</span></a
             >
           </div>
         </div>
         <div class="card-body text-light">
-          <p class="card-title"><%=message.message %></p>
+          <p class="card-title"><%=message.text %></p>
         </div>
       </div>
 

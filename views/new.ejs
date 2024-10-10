@@ -9,6 +9,11 @@
     <script src="/bootstrap.js" defer></script>
   </head>
   <body>
-    <div class="container"><%- include("navbar") %> <%- include("form") %></div>
+    <div class="container">
+      <%- include("navbar") %>
+      <h3><%= title%></h3>
+      <br />
+      <%- include("form") %>
+    </div>
   </body>
 </html>
