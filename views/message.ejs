@@ -13,11 +13,11 @@
       <%- include("navbar") %>
       <div class="card text-bg-primary mb-3">
         <div class="card-header name-date">
-          <div class="name"><%=message.user %></div>
-          <div class="date"><%=message.added %></div>
+          <div class="name"><%=message.name %></div>
+          <div class="date"><%=message.created_at %></div>
         </div>
         <div class="card-body text-light">
-          <p class="card-title"><%=message.text %></p>
+          <p class="card-title"><%=message.message %></p>
         </div>
       </div>
       <a href="/"><button class="btn btn-primary"><< Return</button></a>
