@@ -2,6 +2,7 @@ const { Client } = require("pg");
 require("dotenv").config();
 
 // Set up script to populate messages
+// Changed render link.
 
 async function main() {
   const client = new Client({
